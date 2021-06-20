@@ -1,61 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadavre Exquis</title>
+    <title>Quiz Thomas</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
 
-   
-        <section class="banniere">
-            <header class="header">
-                <img src="https://motsbleus.pages-informatique.com/jeudupendufb.jpg" alt="logo de la marque">
-                <menu class="bar">
-                    <li> <a href="">méthode 1</a></li>
-                    <li> <a href="">méthode 2</a></li>
-                    <li> <a href="">méthode 3</a></li>
-                </menu>
-                
-            </header>
-            <div class="Accueil">
-                <h1 class="small">Construisez vos phrases dès maintenant ou ajoutez vos mots favoris !</h1>
-            </div>
-            
-        </section>
-        <section>
-            <div class="slider">
-                <div class="slide" id="slide-1">Un Chat</div>
-                <div class="slide" id="slide-1">Un chien</div>
-                <div class="slide" id="slide-2">Un homme</div>
-                <div class="slide" id="slide-3">Une patate</div>
-                <div class="slide" id="slide-4">Un glouton</div>
-               
-              </div>
-              <div class="slider">
-                <div class="slide" id="slide-1">marche</div>
-                <div class="slide" id="slide-2">Mange</div>
-                <div class="slide" id="slide-3">valide</div>
-                <div class="slide" id="slide-4">se prélasse</div>
-                <div class="slide" id="slide-5">imagine</div>
-              </div>
-              <div class="slider">
-                <div class="slide" id="slide-1">Un Chat</div>
-                <div class="slide" id="slide-1">Un chien</div>
-                <div class="slide" id="slide-2">Un homme</div>
-                <div class="slide" id="slide-3">Une patate</div>
-                <div class="slide" id="slide-4">Un glouton</div>
-              </div>
+    <section id="Accueil">
+        <header>
+            <ul id="menu">
+                <li><a href="#Accueil">Accueil</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+            </ul>
+        </header>
+         <h1>Bienvenue sur ce super Quiz !</h1>
+    </section>
 
-              </div>
-  
+    <section id="quiz"><h1>
+        <div class="quiz-container" id="quiz">
+        <div class="quiz-header">
+            <h2 id="question">Question text</h2>
+            <ul>
+                <li>
+                    <input
+                        type="radio"
+                        id="a"
+                        name="answer"
+                        class="answer"
+                    />
+                    <label id="a_text" for="a">Question</label>
+                </li>
+                <li>
+                    <input
+                        type="radio"
+                        id="b"
+                        name="answer"
+                        class="answer"
+                    />
+                    <label id="b_text" for="b">Question</label>
+                </li>
+                <li>
+                    <input
+                        type="radio"
+                        id="c"
+                        name="answer"
+                        class="answer"
+                    />
+                    <label id="c_text" for="c">Question</label>
+                </li>
+                <li>
+                    <input
+                        type="radio"
+                        id="d"
+                        name="answer"
+                        class="answer"
+                    />
+                    <label id="d_text" for="d">Question</label>
+                </li>
+            </ul>
+        </div>
+        <button id="submit">Valider</button>
 
-        </section>
-
-    
-
-    
 </body>
+
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
