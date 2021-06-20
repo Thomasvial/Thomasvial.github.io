@@ -1,85 +1,111 @@
-@import url('https://fonts.googleapis.com/css2?family=Teko&family=Varela+Round&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
 
 *{
-    font-family: 'Varela Round', sans-serif;
-    text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
 
-
-
-section.banniere{
-    background: url('https://ctvm.info/wp-content/uploads/2019/10/cadavre-exquis.jpg');
-    background-size: cover;
-    height: 80vh;
-    padding: 1em;
-    flex: 1;
-}
-
-
-header.header{
-    display: flex;
-    align-items: center;
-}
-header.header img{
-    width: 5em;
-}
-
-body {
-    margin: 0 auto;
-}
-
-.big {
-    color: rgb(255, 255, 255);
-    font-size: 3.5em;
-    padding: 1em 1em;
-    font-family: 'Teko', sans-serif;
-    }
-
-.small{
-    color: rgb(0, 0, 0);
-    padding: 2em;
-    position: absolute;
-    bottom: 5em;
-}
-
-
-/*Menu bar de nav*/
-
-menu.bar{
-    display:flex;
-    list-style: none;
-    width: 35em;
-    justify-content: space-around;
-}
-
-menu.bar li a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-}
-
-.slider {
-    width: 300px;
-    height: 300px;
-    display: flex;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;
-  }
-  .slide {
-    width: 300px;
-    flex-shrink: 0;
-    height: 100%;
-  }
-  .slide {
-    
+html{
     scroll-behavior: smooth;
-  }
+}
 
-  .slide > div {
-    
-    scroll-snap-align: start;
-  }
+body{
+    font-size: 100%;
+    font-family: sans-serif;
+}
 
-  .slide > div:target {
-    transform: scale(0.8);
-  }
+div, section, span, ul, li, a, header{
+    box-sizing: border-box;
+}
+
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+}
+
+#menu li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+
+#menu li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+section{
+    width: 100%;
+    float: left;
+    height: 100vh;
+    position: relative;
+}
+
+#Accueil{
+   background-color: #59405C;
+}
+
+#quiz{
+     background-color: #ED6663;
+}
+
+h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin: auto;
+}
+
+ul li {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+ul li label {
+    cursor: pointer;
+}
+
+button {
+    background-color: #59405C;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-family: inherit;
+    font-size: 1.1rem;
+    width: 100%;
+    padding: 1.3rem;
+}
+
+button:hover {
+    background-color: #732d91;
+}
+
+button:focus {
+    background-color: #5e3370;
+    outline: none;
+}
+
+
+
+
+
+
+
+
